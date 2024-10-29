@@ -32,3 +32,26 @@
 .time {
   background-size: cover;
 }
+
+body{
+  display: grid;
+  margin: var(--spacing);
+  grid-template-columns: repeat(auto-fit, minmax(305px, 305px));
+  grid-auto-rows: 210px;
+  gap: var(--spacing);
+}
+
+header{
+  grid-row: 1/3;
+}
+
+footer{
+  grid-column: span 2;
+}
+
+
+@media (max-width: 700px) {
+  footer{
+    grid-column: auto;
+  }
+}
